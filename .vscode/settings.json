@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/7b3be658-1fbc-48ff-bccf-b46f04f855b7/resourceGroups/DinGroup/providers/Microsoft.Web/sites/mycar859",
+    "appService.deploySubpath": "build"
+}

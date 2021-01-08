@@ -4,12 +4,21 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
+var express = require("express");
+var server = express();
+var options = {
+  index: "index.html",
+};
+server.use("/", express.static("/home/site/wwwroot", options));
+server.listen(process.env.PORT);
+
+ ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
